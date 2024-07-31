@@ -54,9 +54,6 @@
     body {
         @apply bg-background text-foreground;
     }
-    button {
-        @apply active: outline-none;
-    }
 }
 
 @layer utilities {

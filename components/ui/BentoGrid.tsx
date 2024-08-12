@@ -127,10 +127,10 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-
+{/*
 {id === 6 && (
 
-)}
+)}*/}
         </div>
       </div>
     </div>

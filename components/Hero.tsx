@@ -3,8 +3,11 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
+  const words = [<>Frontend&nbsp;Dev</>, "Drummer", "Designer"];
+
   return (
     <div className="pb-20 pt-10">
       Hero
@@ -35,15 +38,21 @@ const Hero = () => {
             words="Transforming concepts into seamless User Experiences"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Lakshayyy, a Frontend Dev Based in F-town.
-          </p>
+          </p> */}
+
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hiii, I'm Lakshayyy a
+            <FlipWords words={words} className="text-black" />
+            Based in Delhi, NCR.
+          </div>
 
           <a href="/about">
-            <MagicButton 
-            title="Show My Work"
-            icon={<FaLocationArrow />}
-            position="right"
+            <MagicButton
+              title="Show My Work"
+              icon={<FaLocationArrow />}
+              position="right"
             />
           </a>
         </div>

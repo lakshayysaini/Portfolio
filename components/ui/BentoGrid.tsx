@@ -121,18 +121,16 @@ export const BentoGridItem = ({
             <div className="flex w-full p-0">
               <InfiniteMovingCards
                 items={[
-                  "React.js",
-                  "Next.js",
+                  "JavaScript",
                   "TypeScript",
                   "React.js",
                   "Next.js",
+                  "TaildWind CSS",
+                  "Graph QL",
+                  "Mongo DB",
                   "TypeScript",
-                  "React.js",
-                  "Next.js",
-                  "TypeScript",
-                  "React.js",
-                  "Next.js",
-                  "TypeScript",
+                  "Redux",
+                  "APIs",
                 ]}
                 direction="right"
                 speed="fast"

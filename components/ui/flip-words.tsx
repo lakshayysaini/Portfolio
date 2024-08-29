@@ -63,7 +63,7 @@ export const FlipWords = ({
         key={currentWord}
       >
         {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
-        {currentWord.split(" ").map((word: any, wordIndex: any) => (
+        {currentWord?.split(" ").map((word: any, wordIndex: any) => (
           <motion.span
             key={word + wordIndex}
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}

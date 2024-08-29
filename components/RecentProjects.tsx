@@ -10,8 +10,7 @@ const RecentProjects = () => {
   return (
     <div className="pt-[6rem] pb-10" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        A small selection of <span className="text-purple">my projects</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((item, index) => (
@@ -33,7 +32,7 @@ const RecentProjects = () => {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-neutral-500 text-sm max-w-full mt-2 dark:text-neutral-300"
               >
                 {item.des}
               </CardItem>
@@ -50,18 +49,19 @@ const RecentProjects = () => {
                 <CardItem
                   translateZ={20}
                   as={Link}
-                  href="https://twitter.com/mannupaaji"
+                  href={item.github}
                   target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  className="px-4 py-2 rounded-xl text-xs font-normal text-sm dark:text-white"
                 >
-                  Try now →
+                  Github →
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
-                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-sm font-semibold"
+                  href={item.live}
                 >
-                  Sign up
+                  Live Link
                 </CardItem>
               </div>
             </CardBody>

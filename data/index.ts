@@ -176,31 +176,39 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Lead Frontend Developer",
+    desc: "Developed SaaS and optimized microservices and CMS for assessments, enhancing user engagement, and lead conversion.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    company: "Stride Ahead",
+    time: "July 2023 - present",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Frontend Developer Intern",
+    desc: "Enhanced software features and stability for a large user base by leveraging React and Fabric.js, and resolving critical production-level bugs.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
+    company: "Vidyo.ai",
+    time: "Jan 2023 - June 2023",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Graphic Designer & Video Editor",
+    desc: "Created impactful visual content and contributed to the visual identity of VRAcademi, enhancing social media presence and marketing effectiveness.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
+    company: "VRAcademi",
+    time: "Jun 2021 - Apr 2022",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Graphic Designer",
+    desc: "Worked as a Graphic Designer and Intern Manager at Youth India Placement Cell, overseeing design, review, and approval of social media creatives.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    company: "Youth India Placement Cell",
+    time: "Jun 2021 - Aug 2021",
   },
 ];
 

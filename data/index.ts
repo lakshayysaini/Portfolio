@@ -215,14 +215,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/lakshayysaini/",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/git.svg",
+    link: "https://github.com/lakshayysaini",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/twit.svg",
+    link: "https://twitter.com/Lakshayyyyee",
   },
 ];

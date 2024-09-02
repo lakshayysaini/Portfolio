@@ -10,7 +10,7 @@ const RecentProjects = () => {
   return (
     <div className="pt-[6rem] pb-10" id="projects">
       <h1 className="heading">
-        A small selection of <span className="text-purple">my projects</span>
+        A Small Selection of <span className="text-purple">My Projects.</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((item, index) => (

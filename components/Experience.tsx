@@ -7,7 +7,7 @@ const Experience = () => {
     <div className="py-20" id="experience">
       <h1 className="heading">
         My
-        <span className="text-purple"> work experience.</span>
+        <span className="text-purple"> Work Experience.</span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
@@ -28,10 +28,10 @@ const Experience = () => {
                   {card.title}
                 </h1>
                 <div className="flex flex-row w-full justify-between">
-                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium">
+                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium text-slate-200">
                     {card.company}
                   </h1>
-                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium">
+                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium text-slate-200">
                     {card.time}
                   </h1>
                 </div>

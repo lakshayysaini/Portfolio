@@ -4,7 +4,7 @@ import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
-import { navItems } from "@/data";
+import { BentoGridSecondDemo } from "@/components/GridTwo";
 
 export default function Home() {
   return (
@@ -12,7 +12,8 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         {/*<FloatingNav navItems={navItems} />*/}
         <Hero />
-        <Grid />
+        {/* <Grid /> */}
+        <BentoGridSecondDemo />
         <RecentProjects />
         <Experience />
         <Footer />

@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { InfiniteMovingCards } from "./infinite-moving-cards";
+import { motion } from "framer-motion";
 
 export const GlobeComponent = () => {
   return (
@@ -19,6 +20,45 @@ export const GlobeComponent = () => {
     </div>
   );
 };
+
+const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "Tailwind CSS",
+  "GraphQL",
+  "MongoDB",
+  "Redux",
+  "APIs",
+];
+
+// export const SkillsComponent = () => {
+//   return (
+//     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center p-6">
+//       <motion.div
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.8, ease: "easeInOut" }}
+//         className="grid grid-cols-2 gap-4"
+//       >
+//         {skills.map((skill, index) => (
+//           <motion.div
+//             key={index}
+//             whileHover={{
+//               scale: 1.05,
+//               boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+//             }}
+//             className="p-4 bg-gray-800 text-white rounded-lg shadow-md text-center font-semibold"
+//           >
+//             {skill}
+//           </motion.div>
+//         ))}
+//       </motion.div>
+//     </div>
+//   );
+// };
+
 
 export const InfinityMovingCaards = () => {
   return (

@@ -34,15 +34,15 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "The Technologies are Beautiful",
+    description: "and their libraries are just damn.",
     header: <InfinityMovingCaards />,
     className: "md:col-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Try to Move This Globe",
+    description: "Impactful product >>>> FAANG jobs",
     header: <GlobeComponent />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,

@@ -59,10 +59,12 @@ const skills = [
 //   );
 // };
 
-
 export const InfinityMovingCaards = () => {
+  const leftLists = ["ReactJS", "Express", "Typescript"];
+  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent items-center">
+    <div className="flex flex-col w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent items-center">
       <InfiniteMovingCards
         items={[
           "JavaScript",
@@ -77,8 +79,50 @@ export const InfinityMovingCaards = () => {
           "APIs",
         ]}
         direction="right"
-        speed="fast"
+        speed="slow"
       />
+      <InfiniteMovingCards
+        items={[
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "TaildWind CSS",
+          "Graph QL",
+          "Mongo DB",
+          "TypeScript",
+          "Redux",
+          "APIs",
+        ]}
+        direction="left"
+        speed="slow"
+      />
+      {/* <div className="flex gap-1 lg:gap-5 w-fit">
+        <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+          {leftLists.map((item, i) => (
+            <span
+              key={i}
+              className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+            >
+              {item}
+            </span>
+          ))}
+          <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+        </div>
+        <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+          <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+          {rightLists.map((item, i) => (
+            <span
+              key={i}
+              className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div> */}
     </div>
   );
 };

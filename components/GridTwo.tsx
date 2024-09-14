@@ -9,8 +9,8 @@ import {
 } from "@tabler/icons-react";
 import {
   GlobeComponent,
-  FloatingDockDemo,
   InfinityMovingCaards,
+  WorkTogetherEmail,
 } from "./ui/BentoGridComponents";
 
 export function BentoGridSecondDemo() {
@@ -42,7 +42,7 @@ const items = [
   },
   {
     title: "Try to Move This Globe",
-    description: "Impactful product >>>> FAANG jobs",
+    description: "Building impactful product >>> FAANG jobs",
     header: <GlobeComponent />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
@@ -50,7 +50,7 @@ const items = [
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    header: <WorkTogetherEmail />,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },

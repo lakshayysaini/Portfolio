@@ -7,6 +7,7 @@ import MagicButton from "../MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import animationData from "../../data/confetti.json";
 import Lottie from "react-lottie";
+import { BackgroundGradientAnimation } from "./GradientBg";
 
 export const GlobeComponent = () => {
   return (
@@ -70,8 +71,8 @@ export const WorkTogetherEmail = () => {
 
   return (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent">
-      <div className="mt-5 relative">
-        <div className={`absolute -bottom-5 right-0 `}>
+      <BackgroundGradientAnimation>
+        {/* <div className={`absolute -bottom-5 right-0 `}>
           <Lottie
             options={{
               loop: emailCopied,
@@ -90,8 +91,17 @@ export const WorkTogetherEmail = () => {
           position="left"
           handleClick={handleCopy}
           otherClasses="!bg-[#161A31]"
-        />
-      </div>
+        /> */}
+        <div className="z-50 inset-0 flex items-center justify-center text-white font-bold px-4 text-3xl text-center md:text-4xl lg:text-7xl">
+          <MagicButton
+            title={emailCopied ? "Email is Copied!" : "Copy my email address"}
+            icon={<IoCopyOutline />}
+            position="left"
+            handleClick={handleCopy}
+            otherClasses="!bg-[#161A31]"
+          />
+        </div>
+      </BackgroundGradientAnimation>
     </div>
   );
 };

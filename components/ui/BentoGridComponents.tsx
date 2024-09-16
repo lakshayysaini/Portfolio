@@ -71,8 +71,9 @@ export const WorkTogetherEmail = () => {
   };
 
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center">
-      <div className={`absolute -bottom-5 right-0 `}>
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
+      {/* Ensure parent div has 'relative' positioning */}
+      <div className={`absolute`}>
         <Lottie
           options={{
             loop: emailCopied,

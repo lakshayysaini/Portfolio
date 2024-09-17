@@ -11,6 +11,7 @@ import {
   GlobeComponent,
   InfinityMovingCaards,
   WorkTogetherEmail,
+  CurrentProjectCompare,
 } from "./ui/BentoGridComponents";
 
 export function BentoGridSecondDemo() {
@@ -58,7 +59,7 @@ const items = [
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+    header: <CurrentProjectCompare />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },

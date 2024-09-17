@@ -98,14 +98,10 @@ export const WorkTogetherEmail = () => {
 
 export const CurrentProjectCompare = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
-      <Compare
-        firstImage="https://assets.aceternity.com/code-problem.png"
-        secondImage="https://assets.aceternity.com/code-solution.png"
-        firstImageClassName="object-cover object-left-top"
-        secondImageClassname="object-cover object-left-top"
-        className="w-full"
-        slideMode="hover"
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-baseline overflow-y-auto z-0">
+      <img
+        src="/csn.png"
+        className="object-contain object-cover mix-blend-darken bg-left-top"
       />
     </div>
   );

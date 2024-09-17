@@ -42,18 +42,18 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Try to Move This Globe",
-    description: "Building impactful product >>> FAANG jobs",
-    header: <GlobeComponent />,
-    className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "Build something together?",
     description: "would love to discuss some good scalable ideas on a call !",
     header: <WorkTogetherEmail />,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Try to Move This Globe",
+    description: "Building impactful product >>> FAANG jobs",
+    header: <GlobeComponent />,
+    className: "md:col-span-1",
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Power of Communication",

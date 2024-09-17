@@ -7,8 +7,7 @@ import MagicButton from "../MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import animationData from "../../data/confetti.json";
 import Lottie from "react-lottie";
-import { BackgroundGradientAnimation } from "./GradientBg";
-import { WavyBackground } from "./BackgroundBeams";
+import { Compare } from "./compare";
 
 export const GlobeComponent = () => {
   return (
@@ -92,6 +91,21 @@ export const WorkTogetherEmail = () => {
         position="left"
         handleClick={handleCopy}
         otherClasses="!bg-[#161A31]"
+      />
+    </div>
+  );
+};
+
+export const CurrentProjectCompare = () => {
+  return (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
+      <Compare
+        firstImage="https://assets.aceternity.com/code-problem.png"
+        secondImage="https://assets.aceternity.com/code-solution.png"
+        firstImageClassName="object-cover object-left-top"
+        secondImageClassname="object-cover object-left-top"
+        className="w-full"
+        slideMode="hover"
       />
     </div>
   );

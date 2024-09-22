@@ -101,7 +101,7 @@ export const CurrentProjectCompare = () => {
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-baseline overflow-y-auto z-0">
       <img
         src="/csn.png"
-        className="object-contain object-cover mix-blend-darken bg-left-top"
+        className="object-contain object-cover mix-blend-darken bg-left-top p-5"
       />
     </div>
   );

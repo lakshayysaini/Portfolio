@@ -42,7 +42,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Build something together?",
+    title: "Build something CRAZY together?",
     description: "would love to discuss some good scalable ideas on a call !",
     header: <WorkTogetherEmail />,
     className: "md:col-span-1",
@@ -56,9 +56,13 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: (
+      <>
+        A short piece of{" "}
+        <span style={{ textDecoration: "line-through" }}>advice</span> Code
+      </>
+    ),
+    description: "that's just simply a code for google auth via jwt token.",
     header: <CurrentProjectCompare />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,

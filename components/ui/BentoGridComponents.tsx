@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { GlobeDemo } from "./GridGlobe";
 import { InfiniteMovingCards } from "./infinite-moving-cards";
 import MagicButton from "../MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import animationData from "../../data/confetti.json";
 import Lottie from "react-lottie";
-import { Compare } from "./compare";
+import { motion, useAnimation } from "framer-motion";
 
 export const GlobeComponent = () => {
   return (
@@ -97,12 +97,41 @@ export const WorkTogetherEmail = () => {
 };
 
 export const CurrentProjectCompare = () => {
+  const controls = useAnimation();
+  const imageRef = useRef<any>(null);
+
+  useEffect(() => {
+    const scrollContainer = async () => {
+      if (imageRef.current) {
+        const imageHeight = imageRef.current.clientHeight;
+        const containerHeight = imageRef.current.parentElement.clientHeight;
+
+        const scrollDistance = imageHeight - containerHeight;
+
+        await controls.start({
+          y: [0, -scrollDistance],
+          transition: {
+            duration: 10,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "reverse",
+          },
+        });
+      }
+    };
+
+    scrollContainer();
+  }, [controls]);
+
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-baseline overflow-y-auto z-0">
-      <img
-        src="/csn.png"
-        className="object-contain object-cover mix-blend-darken bg-left-top p-5"
-      />
+    <div className="flex flex-1 w-full h-full rounded-xl border border-transparent bg-transparent justify-center items-baseline overflow-hidden z-0">
+      <motion.div className="h-full" animate={controls}>
+        <img
+          ref={imageRef}
+          src="/csn.png"
+          className="object-contain object-cover"
+        />
+      </motion.div>
     </div>
   );
 };

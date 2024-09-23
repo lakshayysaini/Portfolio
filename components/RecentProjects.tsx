@@ -8,7 +8,7 @@ import { projects } from "@/data";
 
 const RecentProjects = () => {
   return (
-    <div className="pt-[6rem] pb-10" id="projects">
+    <div className="pt-[6.5rem] pb-10" id="projects">
       <h1 className="heading">
         A Small Selection of <span className="text-purple">My Projects.</span>
       </h1>

@@ -1,10 +1,12 @@
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "../data/index";
 import MagicButton from "./MagicButton";
+import { FlipWords } from "./ui/flip-words";
 
 const Footer = () => {
+  const words = ["Dream", "Idea", "Concept", "Vision"];
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
@@ -16,13 +18,13 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw] lg:leading-[4rem]">
-          Ready to make your next <span className="text-purple">SaaS Idea</span>{" "}
-          into a crazy product?
+        <h1 className="heading lg:max-w-[60vw] lg:leading-[4rem]">
+          Transform your <FlipWords words={words} className="text-purple" />{" "}
+          into reality.
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s create a huge impact.
-        </p>
+        <h1 className="text-3xl lg:max-w-[45vw] lg:leading-[4rem] mt-1 mb-4">
+          Let's build something scalable together.
+        </h1>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=lakshayysaini@gmail.com"
           target="_blank"

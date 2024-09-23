@@ -12,7 +12,7 @@ const Hero = () => {
     window.open("https://github.com/lakshayysaini", "_blank");
   };
   return (
-    <div className="pb-20 pt-10">
+    <div className="py-10">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -46,7 +46,7 @@ const Hero = () => {
 
           <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hiii, I'm Lakshayyy a
-            <FlipWords words={words} className="text-black" />
+            <FlipWords words={words} className="text-white" />
             currently based in Delhi, NCR.
           </div>
 

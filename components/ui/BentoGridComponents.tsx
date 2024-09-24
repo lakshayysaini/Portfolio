@@ -64,13 +64,13 @@ export const WorkTogetherEmail = () => {
   const [emailCopied, setEmailCopied] = useState(false);
 
   const handleCopy = () => {
-    const text = "yyy";
+    const text = "lakshayysaini@gmail.com";
     navigator.clipboard.writeText(text);
     setEmailCopied(true);
   };
 
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
+    <div className="flex flex-1 w-full h-full lg:px-8 min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
       {/* Ensure parent div has 'relative' positioning */}
       <div className={`absolute`}>
         <Lottie

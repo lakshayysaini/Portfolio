@@ -5,10 +5,10 @@ import MagicButton from "./MagicButton";
 import { FlipWords } from "./ui/flip-words";
 
 const Footer = () => {
-  const words = ["Dream", "Idea", "Concept", "Vision"];
+  const words = ["Dream", "Idea", "Vision"];
 
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full lg:pt-20 sm:pt-0 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96 z-0">
         <img
           src="/footer-grid.svg"
@@ -19,10 +19,10 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[60vw] lg:leading-[4rem]">
-          Transform your <FlipWords words={words} className="text-purple" />{" "}
+          Transform your <FlipWords words={words} className="text-purple" />
           into reality.
         </h1>
-        <h1 className="text-3xl lg:max-w-[45vw] lg:leading-[4rem] mt-1 mb-4">
+        <h1 className="lg:text-2xl sm:text-xl lg:max-w-[45vw] lg:leading-[4rem] mt-1 mb-4">
           Let's build something scalable together.
         </h1>
         <a
@@ -37,7 +37,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex lg:flex-row sm:flex-col justify-between items-center mt-[2rem]">
+      <div className="flex lg:flex-row sm:flex-col justify-between items-center mt-[3rem]">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Lakshayyyy
         </p>

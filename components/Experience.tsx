@@ -38,10 +38,10 @@ const Experience = () => {
                   {card.title}
                 </h1>
                 <div className="flex flex-row w-full justify-between mt-2">
-                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium text-slate-200">
+                  <h1 className="text-start lg:text-xl sm:text-sm md:text-sm mt-1 font-medium text-slate-200">
                     {card.company}
                   </h1>
-                  <h1 className="text-start text-xl md:text-sm mt-1 font-medium text-slate-200">
+                  <h1 className="text-start lg:text-xl sm:text-sm md:text-sm mt-1 font-medium text-slate-200">
                     {card.time}
                   </h1>
                 </div>

@@ -1,10 +1,20 @@
+"use client";
+
 import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingBorder";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Experience = () => {
+  const handleClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/lakshayysaini/details/experience/",
+      "_blank"
+    );
+  };
+
   return (
-    <div className="py-20" id="experience">
+    <div className="py-20 relative z-30" id="experience">
       <h1 className="heading">
         My
         <span className="text-purple"> Work Experience.</span>
@@ -27,7 +37,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <div className="flex flex-row w-full justify-between">
+                <div className="flex flex-row w-full justify-between mt-2">
                   <h1 className="text-start text-xl md:text-sm mt-1 font-medium text-slate-200">
                     {card.company}
                   </h1>
@@ -39,6 +49,13 @@ const Experience = () => {
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>
+
+                <div
+                  className="text-right text-white-100 mt-3 font-semibold cursor-pointer flex items-center justify-end "
+                  onClick={handleClick}
+                >
+                  See more <AiOutlineArrowRight className="ml-2" />
+                </div>
               </div>
             </div>
           </Button>

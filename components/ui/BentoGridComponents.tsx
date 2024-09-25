@@ -8,6 +8,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import animationData from "../../data/confetti.json";
 import Lottie from "react-lottie";
 import { motion, useAnimation } from "framer-motion";
+import { BackgroundLines } from "./background-lines";
 
 export const GlobeComponent = () => {
   return (
@@ -70,8 +71,10 @@ export const WorkTogetherEmail = () => {
   };
 
   return (
-    <div className="flex flex-1 w-full h-full lg:px-8 min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative">
-      {/* Ensure parent div has 'relative' positioning */}
+    <BackgroundLines
+      className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl border border-transparent bg-transparent justify-center items-center relative"
+      svgOptions={{ duration: 5 }}
+    >
       <div className={`absolute`}>
         <Lottie
           options={{
@@ -92,7 +95,7 @@ export const WorkTogetherEmail = () => {
         handleClick={handleCopy}
         otherClasses="!bg-[#161A31]"
       />
-    </div>
+    </BackgroundLines>
   );
 };
 

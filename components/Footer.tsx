@@ -23,7 +23,7 @@ const Footer = () => {
           into reality.
         </h1>
         <h1 className="lg:text-2xl sm:text-xl lg:max-w-[45vw] lg:leading-[4rem] mt-1 mb-4">
-          Let's build something scalable together.
+          Let&apos;s build something scalable together.
         </h1>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=lakshayysaini@gmail.com"

@@ -45,7 +45,7 @@ const Hero = () => {
           </p> */}
 
           <div className="text-center md:tracking-wider sm:mt-2 mb-4 text-base font-medium md:text-lg lg:text-2xl">
-            Hiii, I'm Lakshayyy a
+            Hiii, I&apos;m Lakshayyy a
             <FlipWords words={words} className="text-white" />
             currently based in Delhi, NCR.
           </div>

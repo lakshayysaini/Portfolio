@@ -8,7 +8,7 @@ const Footer = () => {
   const words = ["Dream", "Idea", "Vision"];
 
   return (
-    <footer className="w-full lg:pt-20 sm:pt-0 pb-10" id="contact">
+    <footer className="w-full lg:pt-10 sm:pt-0 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96 z-0">
         <img
           src="/footer-grid.svg"

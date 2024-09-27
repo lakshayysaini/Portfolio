@@ -57,9 +57,10 @@ const RecentProjects = () => {
                 </CardItem>
                 <CardItem
                   translateZ={20}
-                  as="button"
-                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-sm font-semibold"
+                  as={Link}
+                  className="px-4 py-2 rounded-xl dark:bg-white dark:text-black text-white text-sm font-semibold z-10"
                   href={item.live}
+                  target="__blank"
                 >
                   Live Link
                 </CardItem>

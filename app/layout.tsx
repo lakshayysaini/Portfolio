@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: "Made with Love",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

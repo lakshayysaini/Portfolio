@@ -65,9 +65,9 @@ export const WorkTogetherEmail = () => {
   const [emailCopied, setEmailCopied] = useState(false);
 
   const handleCopy = () => {
-    const text = "lakshayysaini@gmail.com";
-    navigator.clipboard.writeText(text);
-    setEmailCopied(true);
+    const text =
+      "https://drive.google.com/file/d/1L-RIMOb21X6L5RH0__kqJFrVmj0yNKPs/view?usp=sharing";
+    window.open(text, "_blank");
   };
 
   return (
@@ -89,8 +89,7 @@ export const WorkTogetherEmail = () => {
       </div>
 
       <MagicButton
-        title={emailCopied ? "Email is Copied!" : "Copy my email address"}
-        icon={<IoCopyOutline />}
+        title="See Lakshayyy's Resume"
         position="left"
         handleClick={handleCopy}
         otherClasses="!bg-[#161A31]"

@@ -6,7 +6,7 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lakshayyy Portfolio",
+  title: "Lakshayyy's Portfolio",
   description: "Made with Love",
 };
 

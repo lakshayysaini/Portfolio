@@ -66,7 +66,7 @@ export const WorkTogetherEmail = () => {
 
   const handleCopy = () => {
     const text =
-      "https://drive.google.com/file/d/1L-RIMOb21X6L5RH0__kqJFrVmj0yNKPs/view?usp=sharing";
+      "https://drive.google.com/file/d/1W4z7nsZvNTjiYeZRNu-7B5P4JwpvZuOR/view?usp=sharing";
     window.open(text, "_blank");
   };
 
